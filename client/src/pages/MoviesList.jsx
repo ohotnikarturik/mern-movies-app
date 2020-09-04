@@ -60,6 +60,7 @@ class MoviesList extends Component {
       isLoading: false,
     };
   }
+  
 
   componentDidMount = async () => {
     this.setState({ isLoading: true });
@@ -125,7 +126,7 @@ class MoviesList extends Component {
     if (!movies.length) {
       showTable = false;
     }
-
+    console.log(movies)
     return (
       <Wrapper>
         {showTable && (
